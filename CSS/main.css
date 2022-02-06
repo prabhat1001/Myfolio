@@ -5,16 +5,26 @@
 
 *{padding: 0; margin: 0; box-sizing: border-box;}
 
-.box1,.box2,.box3{
+::selection {
+  color: white;
+  background: #7621ff;
+}
+
+.box1,.box2,.box3,.box4{
   width: 100%;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+}
+.box1{
+  background: rgb(255, 255, 255);
+}
+.box2{
+  background: rgb(255, 255, 255);
 }
 .box3{
   background: rgb(190, 223, 241);
 }
-.box2{
-  background: rgb(136, 136, 136);
+.box4{
+  background: rgb(70, 70, 70);
 }
 
 body {
@@ -36,19 +46,17 @@ body {
 
 /*This applies from 0px to 600px*/
 .logo h1{
- 
   font-family: pacifico, sans-serif;
   font-size: x-large;
   margin-left: 15px;
-  margin-top: 5px;
-  
+  margin-top: -7px;
   color: #838282;
 }
 
 .side-bar{
   position:absolute;
   right: 15px;
-  top: 32px;
+  top: 18px;
   width: 30px;
   height: 30px;
 }
@@ -141,12 +149,14 @@ body {
    margin-left: 5px;
  }
 
+/* WHAT I DO? PAGE */
 
  .box1 h1{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   text-align: center;
   padding-top: 10%;
+  color:#7621ff;
 }
 
 .about-me{
@@ -165,20 +175,179 @@ body {
   color: #838282;
 }
 
-
-
-.work-gif{
+.tech1{
   width: 80%;
+  margin-top: 20px;
   margin-left: 10%;
-  padding-top: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
- 
+#img1,#img2,#img3,#img4{
+  text-align: center;
+  width: 25%;
+}
+
+.tech2{
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#img5,#img6{
+  text-align: center;
+  width: 50%;
+}
+
+#img1 p,#img2 p,#img3 p,#img4 p,#img5 p,#img6 p{
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #838282;
+}
+
+.GIF{
+  width: 80%;
+  height: 33%;
+  /* background-color: #4221fd; */
+  margin-left: 10%;
+  margin-top: 4%;
+  overflow: hidden;
+}
+.GIF .work-gif{
+ width: auto;
+  margin-left: 10%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 210px;
+  
+}
+/* EDUCATION PAGE */
+
+.box2 h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 10%;
+  color: #7621ff;
+}
+.edu1{
+  width: 70vw;
+  height: 35vh;
+  background-color: white;
+  margin-left: 15%;
+  margin-top: 3%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(214, 214, 214, 0.767);
+  padding-top: 2%;
+}
+
+
+.edu1 .ed-logo{
+ display: block;
+ width: 80%;
+ height: 50%;
+ /* background-color: #4221fd; */
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.edu1 .ed-logo .logo1{
+  width: auto;
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: chocolate; */
+}
+.edu1 #p1{
+  text-align: center;
+  /* margin-top: 5px; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.edu1 #p2{
+  text-align:center;
+  margin-top: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.edu1 #p3{
+  text-align:center;
+  margin-top: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.edu2 .ed-logo{
+  display: block;
+  width: 80%;
+  height: 50%;
+  /* background-color: #4221fd; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.edu2{
+  width: 70vw;
+  height: 35vh;
+  background-color: rgb(255, 255, 255);
+  margin-left: 15%;
+  margin-top: 5%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(214, 214, 214, 0.767);
+  padding-top: 2%;
+}
+
+.edu2 .ed-logo .logo2{
+  width: auto;
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.edu2 .ed-logo img{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 6%;
+}
+.edu2 #p4{
+  text-align: center;
+  /* margin-top: 5px; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.edu2 #p5{
+  text-align:center;
+  margin-top: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.edu2 #p6{
+  text-align:center;
+  margin-top: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+
 
 /* ----------------------------------------- */
 
 
+
 /* Small screen devices (600px and above) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
 
   .photo{
     width: 50%;
@@ -212,6 +381,120 @@ body {
   #c-button{
     font-size: 20px;
   }
+
+
+  .box1 h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 7%;
+    color: #7621ff;
+  }
+  .about-me{
+    width: 80%;
+    height: 10%;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  .about-me p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .tech1{
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 20%;
+    display: flex;
+  }
+
+  .tech2{
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 35%;
+    display: flex;
+  }
+
+  #img1,#img2,#img3,#img4{
+    text-align: center;
+    width: 25%;
+  }
+
+  .work-gif{
+    width: 55%;
+    margin-left: 22.5%;
+    padding-top: 20px;
+  }
+
+
+  .box2 h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 7%;
+    color: #7621ff;
+  }
+  .edu1{
+    width: 70vw;
+    height: 35vh;
+    background-color: white;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(214, 214, 214, 0.767);
+  }
+  .edu1 .ed-logo img{
+    width: 95px;
+    margin-left: 39.5%;
+    margin-top: 4%;
+  }
+  .edu1 #p1{
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .edu1 #p2{
+    text-align:center;
+    margin-top: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .edu1 #p3{
+    margin-top: 3px;
+    font-size: 0.8rem;
+  }
+  
+  .edu2{
+    width: 70vw;
+    height: 35vh;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+  .edu2 .ed-logo img{
+    width: 25%;
+    margin-left: 37%;
+    margin-top: 4%;
+  }
+  .edu2 #p4{
+    margin-top: 10px;
+  }
+  .edu2 #p5{
+    font-size: 0.8rem;
+  }
+  .edu2 #p6{
+    font-size: 0.8rem;
+  }
+
+
 }
 
 
@@ -259,3 +542,9 @@ body {
 @media only screen and (min-width: 1200px) {
 
 }
+
+
+
+
+
+
