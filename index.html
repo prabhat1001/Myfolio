@@ -1,50 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/main.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="logo">
-        <h1>Prabhat</h1>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="StyleSheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Prabhat Kumar Saraswat</title>
+  </head>
+  <body>
 
+    <div class="logo">
+      <h1>Prabhat</h1>
+    </div>
     <div class="photo">
-        <img src="./assets/photo-dream.png" alt="profile photo">
-    </div> 
+      <img src="./assets/photo-dream.png" alt="profile photo" />
+    </div>
 
     <div class="side-bar">
-        <i class="uil uil-apps"></i>
-        <div class="back-icon" ></div>
+      <i class="uil uil-apps"></i>
+      <div class="back-icon"></div>
     </div>
 
+    <!-- BOTTOM BOX -->
     <div class="bottom-box">
-        <h2>Hi,<br> 
-            I am <span class="name-style">Prabhat Saraswat</span>
-        </h2>
-        
-        <h4>Frontend Web Develepor</h4>
+      <h2>
+        Hi,<br />
+        I am <span class="name-style">Prabhat Saraswat</span>
+      </h2>
 
-        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti dolor ab fuga quidem ipsam nam quibusdam magni quisquam repellendus?</h6>
-        
-        <div class ="cont-button">
-            <a href="#" id="c-button">Contact Me <i class="uil uil-message"></i></a>
-        </div>
+      <h4>Frontend Web Developer</h4>
+
+      <h6>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        corrupti dolor ab fuga quidem ipsam nam quibusdam magni quisquam
+        repellendus?
+      </h6>
+
+      <div class="cont-button">
+        <a href="#" id="c-button">Contact Me <i class="uil uil-message"></i></a>
+      </div>
     </div>
-
+    
+    <!-- BOX 1 (PAGE 2) -->
     <div class="box1">
-        <h1>What I Do?</h1>
-        <div class="about-me">
-            <p> I create responsive frontend web applications and love to build new things. </p>
+      <h1>What I Do?</h1>
+      <div class="about-me">
+        <p>
+          I create responsive frontend web applications and love to build new
+          things.
+        </p>
+      </div>
+      <div class="tech1">
+        <div id="img1" data-aos="fade-in">
+          <img src="./assets/icons8-html-5-48.png" alt="" />
+          <p>HTML 5</p>
         </div>
-        <img class="work-gif" src="./assets/work.gif" alt="">
+        <div id="img2" data-aos="fade-in">
+          <img src="./assets/icons8-css3-48.png" alt="" />
+          <p>CSS 3</p>
+        </div>
+        <div id="img3" data-aos="fade-in">
+          <img src="./assets/icons8-javascript-48.png" alt="" />
+          <p>JavaScript</p>
+        </div>
+        <div id="img4" data-aos="fade-in">
+          <img src="./assets/icons8-react-48.png" alt="" />
+          <p>reactjs</p>
+        </div>
+      </div>
+      <div class="tech2">
+        <div id="img5" data-aos="fade-in">
+          <img src="./assets/icons8-figma-48.png" alt="" />
+          <p>figma</p>
+        </div>
+        <div id="img6" data-aos="fade-in">
+          <img src="./assets/icons8-bootstrap-48.png" alt="" />
+          <p>Bootstrap</p>
+        </div>
+      </div>
+      <div class="GIF" >
+        <img class="work-gif" src="./assets/work.gif" alt="" />
+      </div>
     </div>
-    <div class="box2"></div>
+
+    <!-- BOX 2 (PAGE 3) -->
+    <div class="box2">
+      <h1>Education</h1>
+
+      <div class="edu1" data-aos="fade-in">
+        <div class="ed-logo">
+          <img  class="logo1" src="./assets/GLA_University_logo.png" alt="" />
+        </div>
+        <div class="ed1-cont">
+          <p id="p1">GLA UNIVERSITY</p>
+          <p id="p2">Bachelor of Technology in Computer Science Engineering</p>
+          <p id="p3">2019-2023(Expected)</p>
+        </div>
+      </div>
+
+      <div class="edu2" data-aos="fade-in">
+        <div class="ed-logo">
+          <img  class="logo2" src="./assets/Kendriya_Vidyalaya_logo.png" alt="" />
+        </div>
+        <div class="ed2-cont">
+          <p id="p4">KENDRIYA VIDYALAYA</p>
+          <p id="p5">Intermediate(Science with Maths)</p>
+          <p id="p6">May 2019</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOX 3 (PAGE 4) -->
     <div class="box3"></div>
 
-</body>
+    <!-- BOX 4 (PAGE 5) -->
+    <div class="box4"></div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init( {offset: 200,
+              duration: 1500});
+  </script>
+  </body>
 </html>
