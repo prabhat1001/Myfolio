@@ -74,10 +74,14 @@ body {
   /* background-color: #838282; */
   margin-left: 13%;
   margin-top: -8%;
+  display: flex;
+  flex-direction: column;
 }
 .photo img {
   width: 100%;
   height: 100%;
+  max-width: 400px;
+  align-self: center;
 }
 .desktop-img{
   display: none;
@@ -85,8 +89,6 @@ body {
 .wave{
   display: none;
 }
-
-
 .logo h1 {
   font-family: pacifico, sans-serif;
   font-size: x-large;
@@ -120,11 +122,9 @@ body {
   color: #9b21ff;
   font-size: x-large;
 }
-
 .landing_page .linked_acc{
   display: none;
 }
-
 .bottom-box {
   bottom: 0;
   width: 100%;
@@ -183,6 +183,7 @@ body {
 .cont-button {
   width: 200px;
   height: 30px;
+  
   margin-top: 50px;
   margin-left: 15px;
   text-align: justify;
@@ -193,7 +194,7 @@ body {
   margin-left: 5px;
 }
 
-/* ========================================= WHAT I DO ? PAGE  =========================================== */
+/* =============== WHAT I DO ? PAGE  ================ */
 
 .box1 h1 {
   font-family: "Poppins", sans-serif;
@@ -230,17 +231,17 @@ body {
   width: 25%;
 }
 .tech2 {
-  width: 40%;
+  width: 80%;
   margin-top: 20px;
-  margin-left: 30%;
+  margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
 }
-#img5, #img6 {
+#img5, #img6, #img7, #img8 {
   text-align: center;
-  width: 50%;
+  width: 25%;
 }
-#img1 p, #img2 p, #img3 p, #img4 p, #img5 p, #img6 p {
+#img1 p, #img2 p, #img3 p, #img4 p, #img5 p, #img6 p,#img7, #img8 {
   font-size: 0.7rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -266,7 +267,7 @@ body {
   max-height: 210px;
 }
 
-/* ============================================ EDUCATION PAGE  ============================================ */
+/* ================= EDUCATION PAGE  ================== */
 
 .box2 h1 {
   font-family: "Poppins", sans-serif;
@@ -381,8 +382,11 @@ body {
 .edu-GIF{
   display: none;
 }
+.edu-work-gif{
+  display: none;
+}
 
-/* ============================================ PROJECTS PAGE  ============================================ */
+/* ============== PROJECTS PAGE  =================== */
 
 .box3 {
   margin-bottom: 5%;
@@ -458,24 +462,24 @@ body {
 
       
 /* ========================================================================================================= */
+/*                                              Project Slider                                               */
 /* ========================================================================================================= */
-/* ========================================================================================================= */
-/* ========================================================================================================= */
-/* ========================================================================================================= */
+
+
 
 
       .slider_body {
-        /* max-height: 100vh; */
+        max-height: 100vh;
         background-color: #a03bff;
         background-image: linear-gradient(147deg, #ba54fd 0%, #2600ce 74%);
         min-height: 100vh;
         font-family: 'Montserrat', sans-serif;
         display: flex;
      }
-     
         
     .blog-slider {
       width: 100%;
+      max-height: 100vh;
       position: relative;
       max-width: 800px;
       margin: auto;
@@ -575,9 +579,10 @@ body {
       width: 300px;
       flex-shrink: 0;
       height: 300px;
-      background-image: linear-gradient(to bottom left, #4221fd, #b721ff);
+      background-color: #005ac000;
+      /* background-image: linear-gradient(to bottom left, #4221fd, #b721ff); */
       box-shadow: 4px 13px 30px 1px rgba(19, 19, 19, 0.2);
-      border-radius: 20px;
+      border-radius: 25px;
       transform: translateX(-80px);
       overflow: hidden;
    }
@@ -619,6 +624,7 @@ body {
      }
    }
     .blog-slider__content {
+      margin-left: -20px;
       padding-right: 25px;
    }
 
@@ -642,21 +648,24 @@ body {
    }
     .blog-slider__code {
       color: #7b7992;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       display: block;
       font-weight: 500;
    }
     .blog-slider__title {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 700;
       color: #0d0925;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
    }
    
     .blog-slider__text {
       color: #4e4a67;
       margin-bottom: 30px;
+      font-size: 1rem;
       line-height: 1.5em;
+      text-align: justify;
+      
     }
     .blog-slider__button {
       display: inline-flex;
@@ -674,6 +683,9 @@ body {
     @media screen and (max-width: 576px) {
       .blog-slider__button {
         width: 100%;
+    }
+    .blog-slider__text{
+      font-size: 0.75rem;
     }
     }
     .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
@@ -736,20 +748,19 @@ body {
 
 
 /* ========================================================================================================= */
-/* ========================================================================================================= */
-/* ========================================================================================================= */
-/* ========================================================================================================= */
+
 /* ========================================================================================================= */
 
 
 
 
-/* =============================================  CONTACT PAGE  ============================================ */
+/* ==============  CONTACT PAGE  =============== */
 
 .box4 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-align: center;
+  font-size: 3rem;
   padding-top: 2%;
   color: #fff;
   text-shadow: 3px 2px 5px #b1b0b0;
@@ -779,7 +790,7 @@ body {
   margin-left: 10%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 .box4 .cont-details p1{
   display: block;
@@ -830,15 +841,23 @@ body {
   margin-left: 5%;
   width: 100%;
   /* background-color: #005ac0; */
+  background-color: #e1eafd;
   text-align: center;
   transition: transform .5s;
+
+        height: 50px; 
+        /* background-color: #005ac0; */
+        padding: 8px;
+        border-radius: 25px;
+
 }
 .box4 .cont-details .icons ul li i{
   color: #fff;
   text-shadow: 3px 2px 5px #b1b0b0;
 }
 .box4 .cont-details .icons ul li:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
+  box-shadow: 6px 6px 10px rgba(158, 197, 193, 0.74);
 }
 .box4 .cont-details .icons ul li .uil-twitter:hover{
   color: #00ccff;
@@ -862,7 +881,9 @@ body {
 
 
 
+
 /* =============================== Small screen devices (600px and above)  ============================== */
+
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .photo {
@@ -1000,7 +1021,9 @@ body {
   }
 }
 
+
 /* =============================== Medium screen devices (768px and above)  =============================== */
+
 
 @media only screen and (min-width: 768px) {
       .bottom-box h2 {
@@ -1031,46 +1054,7 @@ body {
         margin-left: 30px;
       }
 
-      /* ============================= Projects Slider =========================== */
-
-      /* .blog-slider {
-        min-height: 500px;
-        height: auto;
-        margin: 180px auto;
-        
-      }
-      .blog-slider__item {
-        flex-direction: column;
-      }
-      .blog-slider__img {
-        transform: translateY(-50%);
-        width: 90%;
-      }
-      .blog-slider__content {
-        margin-top: -80px;
-        text-align: center;
-        padding: 0 30px;
-      }
-      .blog-slider__pagination {
-        transform: translateX(-50%);
-        left: 50% !important;
-        top: 205px;
-        width: 100% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-        .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-              margin: 0 5px;
-      } */
-}
-/* =============================== Big screen devices (1025px and above)  =============================== */
-
-@media only screen and (min-width: 1025px) {
- 
-
-      /* =================[  LANDING PAGE  ]==================== */
-
+     
       .landing_page{
         display: inline-flex;
         background-color: #ffffff; 
@@ -1079,11 +1063,11 @@ body {
       }
       .landing_page .linked_acc{
         display: block;
-        width: 8%;
+        width: 12%;
         height: 40vh;
         /* background-color: #7621ff; */
         margin-top: 30vh;
-        margin-left: 10%;
+        margin-left: 5%;
       }
       .landing_page .linked_acc ul li{
         /* background-color: #21ff76;  */
@@ -1095,7 +1079,7 @@ body {
       }
       .landing_page .linked_acc ul li:hover{
         transform:scale(1.3);
-        box-shadow: 3px 2px 5px rgb(214, 214, 214);
+        box-shadow: 3px 2px 5px rgb(202, 202, 202);
         border-radius: 5px;
       }
       .landing_page .linked_acc ul li a i{
@@ -1105,10 +1089,10 @@ body {
         color:#7621ff;
       }
       .landing_page .bottom-box {
-        width: 100%;
+        width: 95%;
         height: 70vh;
         /* background-color: rgb(255, 251, 0); */
-        margin-top: 17vh;
+        margin-top: 14vh;
         border-radius: 0;
         /* margin-left: 2%;  */
         box-shadow: none;
@@ -1133,16 +1117,16 @@ body {
       .landing_page .bottom-box h2 {
         margin-left: 8%;
         padding-top: 5vh;
-        font-weight: 600;
-        font-size: 3rem;
+        font-weight: 400;
+        font-size: 2rem;
       }
       .landing_page .bottom-box h2 .name-style {
         font-weight: 600;
       }
       .landing_page .bottom-box h4 {
         margin-left: 8%;
-        font-weight: 600;
-        font-size: 1.5rem;
+        font-weight: 400;
+        font-size: 1.3rem;
         margin-top: 0px;
       }
       .landing_page .bottom-box h6 {
@@ -1151,6 +1135,7 @@ body {
         margin-right: 15%;
         text-align: justify;
         font-weight: 400;
+        font-size: 1rem;
         
       }
       #c-button {
@@ -1183,11 +1168,13 @@ body {
       }
       .desktop-img {
         display: block;
-        width: 70%;
+        width: 50%;
         height: 58vh;
-        margin-right: 5%;
+        margin-right: 2%;
         /* background-color: #d8d8d8;  */
         margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
       }
       .desktop-img img {
         width: auto;
@@ -1195,6 +1182,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         max-height: 100%;
+        max-width: 350px;
+        align-self: center;
       }
       .side-bar{
         display: none;
@@ -1207,36 +1196,39 @@ body {
 
       .desktop-GIF{
         display: block;
-        width: 56%;
+        width: 50%;
         height: 100vh;
-        margin-left: 2%;
+        margin-left: 1%;
          /* background-color: #4221fd;   */
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
       }
       .desktop-GIF .desktop-work-gif{
-        width: 70%;
+        width: 100%;
         /* margin-left: 80%; */
         display: block;
         margin-left: auto;
         margin-right: auto;
         max-height: 550px;
-        padding-top: 20vh;
-        
-  
+        padding-top: 25vh;
+        /* max-width: 350px; */
+        align-self: center;
       }
       .box1{
         display: inline-flex;
         /* background-color: #525252; */
       }
       .Box1-side-content{
-        max-width: 40%;
+        min-width: 50%;
+        margin-right: 1%;
         /* background-color: yellowgreen; */
       } 
       .box1 .Box1-side-content h1 {
         display: block;
         font-weight: 600;
         width: 100%;
-        margin-top: 15%;
+        margin-top: 17%;
         font-size: 2.5rem;
         /* background-color: #005ac0; */
 
@@ -1244,11 +1236,12 @@ body {
         
       }
       .about-me {
-        width: 35vw;
-        height: 13%;
-        /* background-color: #ffffff; */
+        width: 48vw;
+        height: 19%;
+        background-color: #ffffff;
         margin-top: 5%;
         text-align: center;
+        margin-left: 1%;
 
         /* display: none; */
 
@@ -1258,8 +1251,8 @@ body {
         font-weight: 500;
         font-size: 1rem;
         text-align: justify;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
         color: #838282;
 
         /* display: none; */
@@ -1280,27 +1273,23 @@ body {
         width: 25%;
       }
       .tech2 {
-        width: 40%;
+        width: 80%;
         margin-top: 20px;
-        margin-left: 30%;
+        margin-left: 10%;
         display: flex;
         flex-wrap: wrap;
-
-        /* display: none; */
-
       }
-      #img5,#img6 {
+      #img5, #img6, #img7, #img8 {
         text-align: center;
-        width: 50%;
+        width: 25%;
       }
-      #img1 p, #img2 p, #img3 p, #img4 p, #img5 p, #img6 p {
+      #img1 p, #img2 p, #img3 p, #img4 p, #img5 p, #img6 p,#img7, #img8 {
         font-size: 0.7rem;
         font-family: "Poppins", sans-serif;
         text-align: center;
         color: #838282;
       }
       .GIF {
-      
         display: none;
       }
 
@@ -1446,7 +1435,7 @@ body {
       .box4 .cont-img{
         display: block;
         width: 50%;
-        height: 58%;
+        height: 48%;
         margin-left: 5%;
          /* background-color: #4221fd; */
         /* margin-top: 5vh; */
@@ -1459,6 +1448,353 @@ body {
         margin-top: -15%;
         margin-right: auto;
         max-height: 100%;
+      }
+
+    }
+
+
+/* =============================== Big screen devices (1025px and above)  =============================== */
+
+
+@media only screen and (min-width: 1025px) {
+ 
+
+      /* =================[  LANDING PAGE  ]==================== */
+
+      .landing_page{
+        display: inline-flex;
+        background-color: #ffffff; 
+        width: 100%;
+        height: 100vh;
+      }
+      .landing_page .linked_acc{
+        display: block;
+        width: 8%;
+        height: 40vh;
+        /* background-color: #7621ff; */
+        margin-top: 30vh;
+        margin-left: 10%;
+      }
+      .landing_page .linked_acc ul li{
+        /* background-color: #21ff76;  */
+        font-size: 2rem;
+        margin-top: 3vh;
+        text-align: center;
+        list-style: none;
+        transition: transform .3s ease;
+      }
+      .landing_page .linked_acc ul li:hover{
+        transform:scale(1.3);
+        box-shadow: 3px 2px 5px rgb(214, 214, 214);
+        border-radius: 5px;
+      }
+      .landing_page .linked_acc ul li a i{
+        color: #525252;
+      }
+      .landing_page .linked_acc ul li a i:hover{
+        color:#7621ff;
+      }
+      .landing_page .bottom-box {
+        width: 100%;
+        height: 70vh;
+        /* background-color: rgb(255, 251, 0); */
+        margin-top: 17vh;
+        border-radius: 0;
+        /* margin-left: 2%;  */
+        box-shadow: none;
+      }
+      .wave {
+        animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s;        /* Change to speed up or slow down */
+        animation-iteration-count: infinite;  /* Never stop waving :) */
+        transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+        display: inline-block;
+      }
+      @keyframes wave-animation {
+          0% { transform: rotate( 0.0deg) }
+        10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+        20% { transform: rotate(-8.0deg) }
+        30% { transform: rotate(14.0deg) }
+        40% { transform: rotate(-4.0deg) }
+        50% { transform: rotate(10.0deg) }
+        60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+        100% { transform: rotate( 0.0deg) }
+      }
+      .landing_page .bottom-box h2 {
+        margin-left: 8%;
+        padding-top: 5vh;
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      .landing_page .bottom-box h2 .name-style {
+        font-weight: 600;
+      }
+      .landing_page .bottom-box h4 {
+        margin-left: 8%;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-top: 0px;
+      }
+      .landing_page .bottom-box h6 {
+        margin-top: 1vh;
+        margin-left: 8%;
+        margin-right: 15%;
+        text-align: justify;
+        font-weight: 400;
+        
+      }
+      #c-button {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px #c5c5c5;
+        transition: transform .3s;
+      }
+      .cont-button {
+        width: 200px;
+        height: 70px;
+        margin-top: 5vh;
+        margin-left: 8%;
+        text-align: center;
+        font-weight: 400;
+        /* background-color: #fff; */
+      }
+      #c-button:hover{
+        transform: scale(1.2);
+        box-shadow: 3px 2px 5px rgb(214, 214, 214);
+      }
+      .photo{
+        display: none;  /* temporarily none */
+      }
+      .desktop-img {
+        display: block;
+        width: 70%;
+        height: 58vh;
+        margin-right: 5%;
+        /* background-color: #d8d8d8;  */
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .desktop-img img {
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 100%;
+        max-width: 400px;
+        align-self: center;
+      }
+      .side-bar{
+        display: none;
+      }
+      .logo{
+        position: fixed;
+      }
+
+      /* =================[  WHAT I DO PAGE  ]==================== */
+
+      .desktop-GIF{
+        display: block;
+        width: 56%;
+        height: 100vh;
+        margin-left: 2%;
+         /* background-color: #4221fd;   */
+        overflow: hidden;
+      }
+      .desktop-GIF .desktop-work-gif{
+        width: 70%;
+        /* margin-left: 80%; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 550px;
+        padding-top: 20vh;
+        
+  
+      }
+      .box1{
+        display: inline-flex;
+        /* background-color: #525252; */
+      }
+      .Box1-side-content{
+        max-width: 40%;
+        /* background-color: yellowgreen; */
+      } 
+      .box1 .Box1-side-content h1 {
+        display: block;
+        font-weight: 600;
+        width: 100%;
+        margin-top: 4%;
+        font-size: 2.5rem;
+        /* background-color: #005ac0; */
+        align-content: center;
+        /* display: none; */
+        
+      }
+     
+
+      /* ----------------------- */
+
+      .about-me {
+        width: 48vw;
+        position:static;
+        height: 13%;
+        /* background-color: #b92121; */
+        margin-top: -40px;
+        text-align: center;
+        margin-left: 1%;
+
+        /* display: none; */
+
+      }
+      .about-me p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: justify;
+        padding-left: 15%;
+        padding-right: 15%;
+        color: #838282;
+        margin-top: 8%;
+
+        /* display: none; */
+
+      }
+      .tech1 {
+        width: 80%;
+        margin-top: 60px;
+        margin-left: 10%;
+        display: flex;
+        flex-wrap: wrap;
+
+        /* display: none; */
+
+      }
+      #img1,#img2,#img3,#img4 {
+        text-align: center;
+        width: 25%;
+      }
+      .tech2 {
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 10%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #img5, #img6, #img7, #img8 {
+        text-align: center;
+        width: 25%;
+      }
+      #img1 p, #img2 p, #img3 p, #img4 p, #img5 p, #img6 p,#img7, #img8 {
+        font-size: 0.7rem;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        color: #838282;
+      }
+      
+      .GIF {
+      
+        display: none;
+      }
+
+      /* =================[  EDUCATION  ]==================== */
+
+      .box2{
+        /* background-color: #3f3f3f;  */
+         display: flex;
+      }
+      .edu-detail{
+        width: 40vw;
+        margin-left: 5%;
+      }
+      .edu-detail h1{
+        /* background-color: #00ccff; */
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-top: 15%;
+      }
+      .edu1, .edu2 {
+        width: 80%;
+        height: 30vh;
+        background-color: rgb(224, 212, 255);
+        /* box-shadow: 6px 6px 8px rgba(168, 167, 167, 0.527); */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+      }
+      .edu2 .ed-logo {
+        display: block;
+        width: 80%;
+        height: 50%;
+        /* background-color: #4221fd; */
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .edu-GIF{
+        display: block;
+        width: 50%;
+        height: 100vh;
+        /* margin-left: 5%; */
+        /* background-color: #4221fd; */
+        overflow: hidden;
+      }
+      .edu-GIF .edu-work-gif{
+        width: 70%;
+        /* margin-left: 80%; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 620px;
+        padding-top: 15vh;
+        margin-top: 5%;
+        
+  
+      }
+
+
+      /* =================[  PROJECTS  ]==================== */
+
+     
+      
+
+      /* =================[  CONTACT PAGE  ]==================== */
+      .icons{
+        height: 70px;
+      }
+      .icons li{
+        height: 50px;
+        width: 50%;
+        padding: 8px;
+        border-radius: 25px;
+      }
+
+      .box4 .cont-img{
+        display: block;
+        width: 50%;
+        height: 58%;
+        margin-left: 5%;
+         /* background-color: #4221fd; */
+        /* margin-top: 5vh; */
+        position: static;
+        z-index: -14;
+      }
+      .box4 .cont-img img{
+        width: auto;
+        margin-left: 9%;
+        display: block;
+        margin-top: -15%;
+        margin-right: auto;
+        max-height: 100%;
+        /* background-color: #00ccff; */
+        position: static;
+        z-index: -14;
       }
 
 }
