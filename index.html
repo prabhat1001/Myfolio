@@ -27,6 +27,8 @@
     <link rel="icon" href="./assets/photo-blob.png" />
   </head>
   <body>
+    <div id="preloader"></div>
+
     <div class="logo">
       <h1>Prabhat</h1>
     </div>
@@ -325,10 +327,22 @@
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init({ offset: 200, duration: 2000 });
     </script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
     <script type="text/javascript" src="./JS/script.js"></script>
+
+    <!-- preloader script -->
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        });
+    </script>
   </body>
 </html>
