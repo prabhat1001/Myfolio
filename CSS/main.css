@@ -93,7 +93,7 @@ body {
   font-family: pacifico, sans-serif;
   font-size: x-large;
   margin-left: 15px;
-  margin-top: -7px;
+  margin-top: 10px;
   color: #838282;
   cursor: pointer;
 }
@@ -183,7 +183,6 @@ body {
 .cont-button {
   width: 200px;
   height: 30px;
-  
   margin-top: 50px;
   margin-left: 15px;
   text-align: justify;
@@ -888,8 +887,10 @@ body {
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .photo {
     width: 50%;
-    margin-top: -20px;
-    margin-left: 23%;
+    /* margin-top: -20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .bottom-box h2 {
     font-family: "Poppins", sans-serif;
@@ -1019,6 +1020,12 @@ body {
   .edu2 #p6 {
     font-size: 0.8rem;
   }
+
+  .marquee-cont{
+    position: absolute;
+    top:0;
+  }
+ 
 }
 
 
@@ -1054,6 +1061,10 @@ body {
         margin-left: 30px;
       }
 
+      .marquee-cont{
+        position: absolute;
+        top:0;
+      }
      
       .landing_page{
         display: inline-flex;
@@ -1191,6 +1202,8 @@ body {
       .logo{
         position: fixed;
       }
+
+ 
 
       /* =================[  WHAT I DO PAGE  ]==================== */
 
@@ -1812,3 +1825,33 @@ body {
   z-index: 100;
   
 }
+
+
+/* ======================================  marquee ================================================= */
+
+.marquee-cont{
+  height: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  left: auto;
+  right: auto;
+
+}
+
+
+.marquee {
+  font-family: "Poppins", sans-serif;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background:  #e6abf8;
+  color: #000;
+  font-size:16px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+  
